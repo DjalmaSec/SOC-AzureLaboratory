@@ -94,7 +94,9 @@ Foram criados diversos recursos no grupo **SOC-LAB**:
 
 ─ Análise:  Consultas KQL
 
-### 🔍 Consulta KQL para Geolocalização de Ataques
+---
+
+### Consulta KQL para Geolocalização de Ataques
 
 Esta query foi utilizada no workbook para criar o mapa interativo:
 
@@ -108,20 +110,29 @@ let WindowsEvents = SecurityEvent
 WindowsEvents
 | project TimeGenerated, Computer, AttackerIp = IpAddress, cityname, countryname, latitude, longitude
 ```
+- **let GeoIPDB_FULL** ➡ Carrega a watchlist com dados de geolocalização
 
+- **where EventID == 4625** ➡ Filtra apenas eventos de falha de login
+
+- **evaluate ipv4_lookup** ➡ Correlaciona IP's com localização geográfica
+
+- **project** ➡ Exibe apenas as colunas relevantes para o mapa
+
+
+---
 ## 📌 O que aprendi nesse projeto
 
 ─ Configurar um honeypot no Azure e coletar logs reais de ataque
 
 ─ Trabalhar com Microsoft Sentinel e criar visualizações (workbooks)
 
-─ Aprendi a utilizar o KQL (foi fácil por já ter tido praticas com SQL)
+─ Aprendi a utilizar o KQL (foi fácil por já ter aprendido SQL antes)
 
 ─ Analisar padrões de ataque: Holanda foi o país com mais tentativas (15.3k)
 
 ─ Gerenciar custos na nuvem: laboratório completo com custo de R$13,83
 
-
+---
 
 ## ⚠️AVISO DE SEGURANÇA: 
 - Esta configuração é extremamente perigosa em ambientes reais. Foi criada apenas para fins educacionais e o laboratório foi encerrado depois dos testes.
