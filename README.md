@@ -19,7 +19,7 @@ O projeto documenta a criação de um **laboratório prático de SOC** utilizand
 
 ##  Resultados do Laboratório
 
-### Mapa de Ataques em Tempo Real (aproximadamente 20 horas)
+### Mapa de ataques em tempo real (aproximadamente 20 horas)
 
 <img width="896" alt="Mapa de ataques" src="https://github.com/user-attachments/assets/e1753701-8c15-41b8-a706-3ecdeb5c8683" />
 
@@ -53,7 +53,7 @@ Foram criados diversos recursos no grupo **SOC-LAB**:
 
 ---
 
-## 📊 Top Ataques por País (20h de coleta)
+## 📊 Ranking de ataques por País (Em aproximadamente 20h)
 
 | País | Tentativas de Ataque |
 |------|---------------------|
@@ -122,7 +122,7 @@ WindowsEvents
 ---
 ## 📌 O que aprendi nesse projeto
 
-─ Configurar um honeypot no Azure e coletar logs reais de ataque
+─ Configurar uma VM honeypot no Azure e coletar logs reais de ataque
 
 ─ Trabalhar com Microsoft Sentinel e criar visualizações (workbooks)
 
